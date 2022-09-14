@@ -1,0 +1,132 @@
+= Example Title
+Ryan M. Howell <rmhowell@protonmail.com>; Ann_Marie Jensen <mjenson@yahoo.com>; Tomas Lopez_del_Toro <deltoro@gmail.com>;
+
+Don't worry about gumberoos or splintercats.
+Something far more fearsome plagues the days, nights, and inbetweens.
+Wolpertingers.
+
+include::chapter01.adoc[]
+
+include::chapter02.adoc[]
+
+include::chapter03.adoc[]
+
+.About {author_2}
+
+You can contact {firstname_2} {lastname_2} at {email_2}
+
+
+.About {author_3}
+
+You can contact {firstname_3} {lastname_3} at {email_3}
+
+
+.About {author}
+
+You can contact {firstname} {middlename} {lastname} at {email}
+
+====
+Here are your options:
+
+[.Red]#Red Pill#
+[%collapsible]
+======
+[.Red]#Escape into the real world.#
+======
+
+[.Blue]#Blue Pill#
+[%collapsible]
+======
+[.Blue]#Live within the simulated reality without want or fear.#
+======
+====
+
+[source,ruby]
+----
+puts "Hello, World!"
+----
+
+== List of Colors
+.List of Colors
+* [.Blue]#Blue#
+* [.Green]#Green#
+* [.Red]#Red#
+* [.White]#White#
+* [.Purple]#Purple#
+* [.Cyan]#Cyan#
+* [.Yellow]#Yellow#
+* [.Aqua]#Aqua#
+* [.Black]#Black#
+* [.Fuchsia]#Fucsia#
+* [.gray]#gray#
+* [.Lime]#Lime#
+* [.Navy]#Navy#
+* [.Olive]#Olive#
+* [.Silver]#Silver#
+* [.Teal]#Teal#
+
+[cols="<,<", options="header"]
+|===
+
+| Code
+|Result
+
+a|
+[,bash]
+----
+$ curl "https://api.gemini.com/v1/symbols" # <1>
+----
+
+a|
+Returns a list of the symbols available to trade.
+[,json]
+----
+["btcusd", "ethbtc" "..."]
+----
+
+a|
+[,bash]
+----
+$ curl "https://api.gemini.com/v1/symbols/details/btcusd # <2>
+----
+
+a|
+[,json]
+----
+
+{
+  "symbol": "BTCUSD",
+  "base_currency": "BTC",
+  "quote_currency": "USD",
+  "tick_size": 1E-8,
+  "quote_increment": 0.01,
+  "min_order_size": "0.00001",
+  "status": "open",
+  "wrap_enabled": false
+} # <2>
+----
+
+a|This cell is prefixed with an `a`, so the listing block is processed and rendered according to the `source` style rules.
+
+[source,python]
+----
+import os
+print "%s" %(os.uname())
+----
+
+
+|Column, row
+|Column, row
+
+|Column, row
+|Column, row
+
+|Column, row
+|Column, row
+
+|Column, row
+|Column, row
+
+|Column, row
+|Column, row
+|===
